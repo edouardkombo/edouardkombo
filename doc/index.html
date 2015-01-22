@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Katya - Responsive Creative CV Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+	<div id="theme-wrapper">
+		<!-- NAVIGATION -->
+		<div id="theme-navigation">
+			<div id="theme-logo">
+				<img src="assets/images/theme-logo.png" alt="theme logo">
+				<img src="assets/images/balapa.png" alt="author logo" title="Yo, bro!">
+			</div>
+			<div id="theme-navigation-body">
+				<div id="theme-navigation-heading">
+					<div id="theme-navigation-title">Table of Contents</div>
+					<div class="hidden"><a href="#">Menu</a></div>
+					<div class="clearfix"></div>
+				</div>
+				<div id="theme-navigation-list">
+					<ul>
+						<li><a href="#docA">A) HTML Structure</a></li>
+						<li><a href="#docB">B) CSS Files and Structure</a></li>
+						<li><a href="#docC">C) JavaScript</a></li>
+						<li><a href="#docD">D) PHP Code Explanation</a></li>
+						<li><a href="#docE">E) Working with Mailchimp</a></li>
+						<li><a href="#docF">F) Working with Twitter.js</a></li>
+						<li><a href="#credits">G) Credits</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- NAVIGATION -->
+
+		<!-- CONTENT -->
+		<div id="theme-content">
+			<div id="theme-content-heading">Katya - Responsive Creative CV Template : Documentation</div>
+			<div id="theme-content-info">
+				<div id="theme-content-info-created">
+					<div id="theme-content-info-created-body">
+						Created: 29/10/2014<br />
+						By: balapa<br />
+						Email: <a href="mailto:balapa95@gmail.com">balapa95@gmail.com</a>
+					</div>
+				</div>
+				<div id="theme-content-info-description">
+					<div id="theme-content-info-description-body">
+						Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/balapa">here</a>. Thanks so much!
+					</div>
+				</div>
+			</div>
+
+			<div id="theme-content-body">
+				<h3 id="docA">A) HTML Structure</h3>
+				<p>
+					This template is a responsive layout with 1 to 5 columns. All of the information within the main content area is nested within the id "main-container". To separate these columns, i use a framework called Bootstrap. You need to understand that 1 full column is counted as 12 columns. So, if you want to make a single column, you just need to put class "col-md-12" on your div tag. Look at example below.
+				</p>
+
+<pre>&lt;div class="row"&gt;
+    &lt;div class="col-md-12"&gt;Your content goes here&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+				<p>
+					Let's say that you want to create two columns, 
+					so the mathematic will be "12 / 2 = 6". Yes, you need two columns with two "col-md-6" classes.
+				</p>
+
+				<hr>
+
+				<h3>Using Google Font</h3>
+
+				<p>
+					The main font that i use on this template is from google fonts. Google font is an online font, to use this font, you just need to do this following code in your HTML file.
+				</p>
+
+<pre>&lt;link href='http://fonts.googleapis.com/css?family=Roboto:400,300'rel='stylesheet' 
+type='text/css'></pre>
+
+				<p>
+					You can change the font by going to 
+					<a href="http://google.com/fonts">Google fonts</a>
+				</p>
+
+				<img class="default-img" src="assets/images/gf/1.png" alt="Google Font - 1">
+
+				<p>
+					Search your font, when you have found your font, just click the icon quick use (the blue outline).
+				</p>
+
+				<img class="default-img" src="assets/images/gf/2.png" alt="Google Font - 2">
+
+				<p>
+					After that, you'll be directed to a new page. Scroll down until you find HTML 
+					&lt;link> tag like below.
+				</p>
+
+				<img class="default-img" src="assets/images/gf/3.png" alt="Google Font - 3">
+
+				<p>
+					Copy the whole code, and paste it on your HTML file within &lt;head&gt; tag. Next to use this font, go to style.css and write the CSS like example below.
+				</p>
+
+<pre>h2 { font-family : 'Roboto'; }</pre>
+
+				<hr>
+
+				<h3>Using The Icons</h3>
+
+				<p>
+					I use <a href="http://fortawesome.github.io/Font-Awesome">font awesome</a> for this template. It's very simple to use the icon, you just need to put a class on it. First, you put the prefix class, then the icon name. Look at example below.
+            		If you would use font awesome icon, use the following code.
+				</p>
+
+<pre>&lt;span class="fa fa-facebook"></pre>
+
+				<p>You can see whole classes in font-awesome.css.</p>
+
+				<hr>
+
+				<h3 id="docB">B) CSS Files and Structure</h3>
+
+				<p>Here are the included CSS files for this template.</p>
+
+		        <ol>
+		            <li>
+		                <p><strong>Style.css</strong><br>
+		                This file contains the bulk of styles, colors and information for the template styles. Start with this file for your color adjustments or adding additional style information.
+		                </p>
+		            </li>
+		            <li>
+		                <p><strong>Bootstrap.css</strong><br>
+		                Bootstrap is a framework, it provides a CSS reset to reset all of HTML tags to 
+		                work exactly same to many browsers.<br>
+		                It also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file. There's no need to edit this file.
+		                </p>
+		            </li>
+		             <li>
+		                <p><strong>Color Folder : blue.css, etc</strong><br>
+		                This file contains the color of all elements. Edit this file if you want to edit the color of all elements at once.
+		                </p>
+		            </li>            
+		            <li>
+		                <p><strong>Font-awesome.css</strong><br>
+		                I have explain this before, once again this CSS file makes the font icons. There's no need to edit this file.
+		                </p>
+		            </li>
+		            <li>
+		                <p><strong>Twitter.css</strong><br>
+		                This file styling the appearance of twitter feeds. Start with this file if you want to change the font-size, text-align, etc of twitter feeds.        
+		                </p>
+		            </li>
+		            <li>
+		                <p><strong>Preloader.css</strong><br>
+		                This file styling the appearance of preloader, there's no need to edit this file.
+		                </p>
+		            </li>
+		            <li>
+		                <p><strong>Gmap.css</strong><br>
+		                This file styling the appearance of google map design. Start with this file if you want to change the font-size, text-align, etc of google map.
+		                </p>
+		            </li>
+		            <li>
+		                <p><strong>Carousel Folder : Owl.carousel.css & Owl.theme.css</strong><br>
+		                This file styling the quotes carousel slider. Start with this file if you want to edit the with navigation, border-radius, etc.    
+		                </p>
+		            </li>
+		            <li>
+		                <p><strong>Animate.css</strong><br>
+		                This file is collaborated with morpext.min.js to create text rotator animation effect.There's no need to edit this file.        
+		                </p>
+		            </li>
+		            
+		        </ol>
+
+		        <hr>
+
+		        <p>
+					If you would like to edit the <strong>color</strong>, <strong>font</strong>, or style of any elements in one of these columns, you would do the following:
+				</p>
+
+				<pre>h2 { color: #someColor; }</pre>
+
+				<p>
+					If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.
+				</p>
+
+				<pre>#portfolio h2 { color: #someColor; }</pre>
+
+				<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p>
+
+				<hr>
+
+				<h3 id="docC">C) JavaScript</h3>
+				
+				<p>Here are the included JavaScript files for this template.</p>
+		
+				<ol>
+					<li>
+						<p>
+							<strong>jQuery</strong><br>
+		            		jQuery is a Javascript library that greatly reduces the amount of code that you must write
+		            	</p>
+		            </li>
+
+		            <li>
+		            	<p>
+		            		<strong>Prefixfree.min.js</strong><br>
+		               		Prefixfree is a jQuery plugin to add prefix for CSS properties. For example, you don't need to add prefix "-moz" to property "transform" on mozilla firefox, and so on to chrome, etc.
+		                </p> 
+		            </li>
+		            
+		            <li>
+		            	<p>
+		            		<strong>Main.js</strong><br>
+		            		I put the basic setting for smoothscroll, carousel, morphext, ajax, etc in this file. Edit this file if you want to edit the basic setting.
+		            	</p>
+		            </li>
+
+		            <li>
+		            	<p>
+		            		<strong>Blog-post.js, Portfolio-case.js</strong><br>
+		            		This is just additional javascript for blog-post.html and portfolio-case.html. There's no need to edit this file.
+		            	</p>
+		            </li>
+
+		            <li>
+		            	<p>
+		            		<strong>SmoothScroll.js</strong><br>
+            				This plugin makes your browser such as chrome and opera scroll smoothly. There's no need to edit this file.
+            			</p>
+           			</li>
+
+           			<li>
+           				<p>
+           					<strong>TwitterFetcher.min.js</strong><br>
+               				twitterFetcher.min.js is a plugin to get twitter feeds from twitter users. There's no need to edit this file.
+                		</p> 
+            		</li>
+
+            		<li>
+            			<p>
+            				<strong>Twitter.js</strong><br>
+                			To change the user that will show up on your website, edit this file. Find var "config1", in the id, there're
+                			some number. You must change this, to your twitter id. To get the id, follow this <a href="#docF">step</a>.
+                		</p> 
+            		</li>
+
+            		<li>
+            			<p>
+            				<strong>Vendor Folder : FastClick.js, Morphext.min.js, etc</strong><br>
+                			Every single javascript files in vendor folder are frameworks for template effect such as animation, form validation, image shuffeling, etc. There's no need to edit files in that folder.
+                		</p> 
+            		</li>
+            	</ol>
+
+            	<hr>
+
+				<h3 id="docD">D) PHP Code Explanation</h3>
+
+				<p>Here are the included PHP files for this template.</p>
+
+		        <ol>
+		            <li><p>Contact.php<br>
+		            Change the email you want to be the email receiver, go to contact.php, edit this following code:
+		            <pre>$emailTo = 'your@email.com';</pre>
+		            There's no need to edit the other codes.
+		            </p>
+		            </li>
+		        </ol>
+				
+				<hr>
+
+				<h3 id="docE">E) Working with Mailchimp</h3>
+
+				<p>
+					Making a subscribe list with mailchimp is kinda easy. Just follow this instruction.
+				</p>
+
+		        <ol>
+		            <li>
+		            	<p>First, you need to login to mailchimp. If you don't have account yet, please create one <a href="https://login.mailchimp.com/signup?">here</a></p>
+		            </li>
+
+		            <li>
+		            	<p>After, you login, click menu list just like the image below.</p>
+		                <img class="default-img" src="assets/images/mc/1.png" alt="Mailchimp - 1">
+		            </li>
+
+		            <li>
+		            	<p>
+		            		After that, you need to create a new list. Click "create" in the right top.
+		            	</p>
+		                <img class="default-img" style="width: 100%" src="assets/images/mc/2.png" alt="Mailchimp - 2">
+		            </li>
+
+		            <li><p>After that, just fill the information they had required.</p></li>
+
+		            <li>
+		            	<p>After that, select the embeded form in the middle.</p>
+		                <img class="default-img" src="assets/images/mc/3.png" alt="Mailchimp - 3">
+		            </li>
+
+		            <li><p>Finally, scroll down until you find URL like this image below.</p>
+		                <img class="default-img" src="assets/images/mc/4.png" alt="Mailchimp - 4">
+		            </li>
+
+		            <li>
+		            	<p>
+		            		Copy the whole code, go to blog-post.html and paste it in there. 
+		                	Find tag form within &lt;div id="subscribe">.
+		                	Edit the action attribute, change the URL to your mailchimp URL you just copied.
+		                </p>
+		            </li>
+
+		            <li>
+		            	<p>
+		            		After you paste your code to action attribute, change the "post?" into "post-json?".
+		                	And the end of URL add this code "&amp;c=?"
+		                </p>
+		            </li>
+
+		            <li><p>This is the final code that works.</p>
+
+<pre>action="http://balapa.us8.list-manage.com/subscribe/
+post-json?u=074a5f521f440ccfa7bacb4e3&amp;id=9b0f7328d6&amp;c=?"</pre>
+
+		            </li>
+
+		        </ol>
+
+				<hr>
+
+				<h3 id="docF">F) Working with Twitter.js : Getting User ID</h3>
+
+				<p>
+					All you need to change the user that will display on your website is a widget twitter. Follow this instruction to get the user ID.
+            	</p>
+
+		        <ol>
+		            <li><p>First, of course login to twitter.</p></li>
+		            <li>
+		            	<p>And then, go to your setting, select the widget menu.</p>
+		                <img class="default-img" src="assets/images/tw/1.png" alt="Twitter - 1">
+		            </li>
+		            <li><p>After that, create a new widget.</p></li>
+		            <li>
+		            	<p>Enter your twitter username like example below.</p>
+		                <img class="default-img" src="assets/images/tw/2.png" alt="Twitter - 2">
+		                <p>And then, hit button create widget!</p>
+		            </li>
+		            <li>
+		            	<p>Now your preview widget will come up in the right side.</p>
+		                <img class="default-img" src="assets/images/tw/3.png" alt="Twitter - 3">
+		            </li>
+		            <li>
+		            	<p>
+		            		After the preview comes up, your browser URL will change like example below.
+		            	</p>
+		                <img class="default-img" src="assets/images/tw/4.png" alt="Twitter - 4">
+		                <p>
+		                	Get the number after /widget/, copy that, go to twitter.js.
+		                	Find var config1, in the id, paste your id number to that.
+		                </p>
+		            </li>
+		            <li>After that, your last tweet will integrate to your website.</li>
+		        </ol>
+
+				<hr>
+
+				<h3 id="credits">G) Sources and Credits</h3>
+		
+				<p>I've used the following images, icons or other files as listed.
+				
+				<ul>
+					<li>
+						Images from <a href="http://unsplash.com">Unsplash</a>, 
+						<a href="http://deviantart.com">DeviantArt</a>, 
+						<a href="http://dribbble.com">Dribbble</a>.
+					</li>
+					<li><a href="http://fortawesome.github.io/Font-Awesome/">Font awesome</a></li>
+					<li><a href="http://jquery.com/">jQuery</a></li>
+					<li><a href="http://jqueryvalidation.org/">jQuery Validate</a></li>
+					<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+					<li><a href="http://masonry.desandro.com">Masonry</a></li>
+					<li>
+						<a href="http://jasonmayes.com/projects/twitterApi/#sthash.swjT8TuY.dpbs">twitterFetcher.js</a>
+					</li>
+					<li><a href="http://owlgraphic.com/owlcarousel/">Owl.carousel.js</a></li>
+					<li><a href="http://www.crivos.com">SmoothScroll.js</a></li>
+					<li>
+						Google Map design from 
+						<a href="http://codyhouse.co/gem/custom-google-map/">Codyhouse</a>
+					</li>
+					<li><a href="http://leaverou.github.io/prefixfree">Prefixfree.js</a></li>
+					<li><a href="http://vestride.github.io/Shuffle">Shuffle.js</a></li>
+					<li><a href="http://cosmos.layervault.com/typer-js.html">Typer.js</a></li>
+					<li><a href="http://morphext.fyianlai.com">Morphext.js</a></li>
+					<li><a href="http://https://github.com/ftlabs/fastclick">Fastclick.js</a></li>
+				</ul>
+
+				<hr />
+
+				<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+
+				<p class="append-bottom">Bhakti Al Akbar A.K.A balapa</p>
+
+				<a href="#">Back to Top</a>
+
+				<hr class="space" />
+
+			</div>
+		</div>
+		<!-- CONTENT -->
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/smoothScrolls.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>
